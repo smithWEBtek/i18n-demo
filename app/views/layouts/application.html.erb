@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>I18nDemo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <h3>Available translations: <%= I18n.available_locales %></h3>
+  <%= link_to "Spanish version",  "#{root_path}?locale=es" %>
+  <%= link_to "English version",  "#{root_path}" %>
+    <%= yield %>
+  </body>
+</html>
