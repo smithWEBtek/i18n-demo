@@ -30,4 +30,4 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  welcome: "Welcome to localization!"
+  welcome_html: "<h1>Welcome to localization!<h1>"
