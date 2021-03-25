@@ -1,2 +1,2 @@
 es:
-  welcome_html: "<p style='background-color:yellow'>Bienvenida a la localización!</p>"
+  welcome_html: "<p name='the spanish link' style='background-color:yellow'>Bienvenida a la localización!</p>"

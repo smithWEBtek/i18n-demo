@@ -11,8 +11,11 @@
 
   <body>
   <h3>Available translations: <%= I18n.available_locales %></h3>
-  <%= link_to "Spanish version",  "#{root_path}?locale=es" %>
-  <%= link_to "English version",  "#{root_path}" %>
+  <% if locale == :en %>
+    <h3>locale partial</h3>
+  <% end %>
+    <%= link_to "Spanish version",  "#{root_path}?locale=es" %>
+    <%= link_to "English version",  "#{root_path}" %>
     <%= yield %>
   </body>
 </html>
